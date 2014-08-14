@@ -1,0 +1,20 @@
+{
+  "name": "lense.io",
+  "version": "0.0.1",
+  "description": "Contact Sharer",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "Jared De La Cruz"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
