@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contactApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+
+    <!-- CSS -->
+    <link href="vendors/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container custom-container">
+
+      <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1 contact-logo">
+        {{title}}
+      </div>
+
+      <div class="col-xs-offset-1 col-xs-10 col-xs-offset-1 contact-container">
+        <div class="contact-title">
+          <div class="row">
+            <div class="col-xs-2"><img class="contact-img" src="img/picture.png"></div>
+            <div class="col-xs-10">Jared's Contact List</div>
+          </div>
+        </div>
+
+        <div class="contact-menu">
+          <div class="row">
+            <div class="col-xs-4"><img class="contact-img contact-img-menu" src="img/menu.png"></div>
+            <div class="col-xs-4"><img class="contact-img contact-img-menu" src="img/search.png"></div>
+            <div class="col-xs-4"><img class="contact-img contact-img-menu" src="img/settings.png"></div>
+          </div>
+        </div>
+
+        <div class="contact-body">
+          <div ng-view></div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- JS -->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/d3.min.js"></script>
+    <script src="vendors/js/trianglify.min.js"></script>
+    <script src="vendors/js/angular.min.js"></script>
+    <script src="vendors/js/angular-resource.min.js"></script>
+    <script src="vendors/js/angular-route.min.js"></script>
+    <script src="js/contact-app.js"></script>
+    <script src="js/contact-services.js"></script>
+    <script src="js/contact-controllers.js"></script>
+
+    <script type="text/javascript">
+      var t = new Trianglify({noiseIntensity: 0});
+      var pattern = t.generate(window.screen.availWidth, window.screen.availHeight);
+      document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
+    </script>
+  </body>
+</html>

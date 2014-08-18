@@ -1,0 +1,69 @@
+/*!
+ * Contact Sharer
+ * Author: Jared De La Cruz
+ * 2014
+ */
+
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/poiret_one.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yellowtail'), url(../fonts/yellowtail.woff) format('woff');
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.custom-container {
+  max-width: 730px;
+}
+
+.contact-logo {
+  font-family: 'Yellowtail', cursive;
+  text-align: center;
+  font-size: 70px;
+  padding: 15px;
+}
+.contact-container {
+  font-family: 'Poiret One', cursive;
+  font-weight: 400;
+  font-size: 20px;
+}
+.contact-title {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #333333;
+  min-height: 60px;
+  color: #eeeeee; 
+  padding: 15px;
+}
+.contact-menu {
+  background-color: #d9534f;
+  min-height: 60px;
+  padding: 15px;
+  text-align: center;
+}
+.contact-body {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #eeeeee;
+  min-height: 200px;
+  padding: 15px;
+}
+.contact-name {
+  margin-left: 50px;
+}
+.contact-img {
+  height: 32px;
+  width: 32px;
+}
+.contact-img-menu {
+  cursor: pointer;
+}
