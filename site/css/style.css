@@ -55,7 +55,9 @@ body {
   border-bottom-right-radius: 4px;
   background-color: #eeeeee;
   min-height: 200px;
+  max-height: 600px;
   padding: 15px;
+  overflow: auto;
 }
 .contact-name {
   margin-left: 50px;
