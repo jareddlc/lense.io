@@ -24,6 +24,7 @@
     "gulp": "~3.8.7",
     "gulp-clean": "~0.3.1",
     "hbs": "~2.7.0",
+    "mongodb": "~1.4.8",
     "serve-favicon": "~2.0.1"
   }
 }
